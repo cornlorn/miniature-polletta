@@ -184,3 +184,7 @@ section#story {
         }
     }
 }
+
+audio {
+    display: none;
+}

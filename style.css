@@ -73,7 +73,7 @@ body {
 }
 
 .main-container {
-    max-width: min(1080px, 100vw - 40px);
+    max-width: min(1000px, 100vw - 40px);
     margin-inline: auto;
 }
 

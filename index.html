@@ -89,10 +89,68 @@
                         </label>
                         <div />
                 </section>
+                <section id="phrases">
+                    <span>POLLETTA</span>
+                    <span id="phrase"></span>
+                </section>
             </div>
         </main>
         <footer>
             <p>Created by <a href="http://github.com/cloxious/" target="_blank" rel="noopener noreferrer">Cloxious</a>.</p>
         </footer>
+        <script>
+            var phrases = [
+                "Mi felicidad es tener tu nombre en mi corazón.",
+                "Pienso en ti desde que me despierto hasta que me duermo.",
+                "Te amo, mi amor.",
+                "Te amo, mi vida.",
+                "Te amo, mi ángel.",
+                "Te amo, mi princesa.",
+                "Te amo, mi reina.",
+                "Mi vida solo tiene sentido si estás a mi lado.",
+                "Me robaste el corazón y estaré eternamente agradecido por eso.",
+                "En tus ojos puedo ver un futuro maravilloso a tu lado.",
+                "Nada en este mundo me hace más feliz que estar a tu lado.",
+                "Siento que mi corazón está completo si te tengo.",
+                "Eres mi princesa, mi guerrera, mi compañera de aventuras.",
+                "Amo tu sonrisa. Amo tu mirada. Amo tu voz.",
+                "Amo cada parte de ti.",
+                "Eres la mujer más hermosa del mundo.",
+                "Amo tus estupideces.",
+                "A pesar de la distancia, sigo pensando en ti y esperando con ansias el momento en que nos veamos.",
+                "Eres la mujer de mis sueños.",
+                "Eres la mujer de mi vida.",
+                "Eres la mujer que quiero a mi lado por el resto de mi vida.",
+                "Eres mi persona favorita en todo el mundo.",
+                "Estar contigo es mi mayor alegría.",
+                "Eres mi hogar. A tu lado, me siento completo y seguro.",
+                "Eres la mujer de mi vida. Eres mi cielo en la tierra.",
+                "Incluso cuando no estamos juntos, mi corazón se llena de alegría solo de pensar en ti.",
+                "Fuimos hechos el uno para el otro.",
+                "Amore mio, ti amo. Voglio restare sempre con te.",
+                "Si lees esto, quiero que sepas que siento todo lo que he escrito en este sitio web, incluso si no te lo digo.",
+            ];
+            
+            function randomAndTypePhrase() {
+                var randomIndex = Math.floor(Math.random() * phrases.length);
+                var phrase = phrases[randomIndex];
+                var i = 0;
+                var speed = 50;
+
+                document.querySelector("#phrase").innerHTML = "";
+
+                function type() {
+                    if (i < phrase.length) {
+                        document.querySelector("#phrase").innerHTML += phrase.charAt(i);
+                        i++;
+                        setTimeout(type, speed);
+                    }
+                }
+
+                type();
+            }
+
+            randomAndTypePhrase();
+        </script>
     </body>
 </html>

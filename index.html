@@ -12,6 +12,23 @@
         <script>
             window.onload = function () {
                 document.querySelector(".loader").style.display = "none";
+
+                var imageNames = ["IMG_0001.png", "IMG_0002.jpg", "IMG_0003.jpg", "IMG_0004.jpg", "IMG_0005.jpg"];
+
+                function shuffleArray(array) {
+                    for (var i = array.length - 1; i > 0; i--) {
+                        var j = Math.floor(Math.random() * (i + 1));
+                        var temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
+                }
+
+                shuffleArray(imageNames);
+
+                for (var i = 0; i < imageNames.length; i++) {
+                    document.querySelector('#slide' + (i + 1) + ' img').src = imageNames[i];
+                }
             };
         </script>
     </head>

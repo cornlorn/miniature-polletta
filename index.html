@@ -39,13 +39,9 @@
                 </section>
             </div>
         </main>
-        <script>
-            const audio = new Audio("https://numn.ummn.nu/api/v1/download?sig=ZKY0OD3AAX%2BamJkCNTYdbThLS%2BSSn0r9z8kRHbWJKvEP0QHRxxJ8%2F77mI9XASTBtylN9wQut45B3kdk360n8lDTzIzjsNbctAu3yDi87WqKd95yMQSe9K9mUi33JkhDMrYWXBZqATdLs83acgH%2Fw8pwAJM7Prv2uWjPFEvi2WgxExebszKlRz22Hx3SsiZjMvb%2FBQvH4S1RIx3J37irL4p3EF2AH53EVbZi7FibaLcSuPrFLu9%2BuDFETWWM7XbNDbLGhSiV9%2Fq8dr%2B4edeUXAyjWHdOgKFjp8EndSmVrpRq7KxEEImJ0fheVob7akLmDKReNIFutpCv9HuIQC5z0ww%3D%3D&v=/PSjeJrDI4a4,PSjeJrDI4a4&_=0.23359869756009966");
-
-            audio.loop = true;
-            audio.volume = 0.2;
-            audio.play();
-
-        </script>
+        <!-- Add background audio mp3 that autoplays and loops -->
+        <audio autoplay loop>
+            <source src="audio.mp3" type="audio/mp3">
+        </audio>
     </body>
 </html>

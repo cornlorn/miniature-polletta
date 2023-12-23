@@ -302,9 +302,9 @@ small {
 
 #carousel-photos {
     display: flex;
-    justify-content: center; /* aligns items on the horizontal line (x-axis) */
-    align-items: center; /* aligns items on the vertical line (y-axis) */
-    height: 100vh; /* you may need to adjust this value */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     width: 100%;
 }
 

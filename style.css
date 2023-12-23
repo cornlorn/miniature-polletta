@@ -416,3 +416,25 @@ img {
         transform: rotate(360deg);
     }
 }
+
+footer {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    font-size: 0.7rem;
+    color: var(--text-500);
+    background-color: var(--background-100);
+    user-select: none;
+    -webkit-user-select: none;
+
+    > p a {
+        color: var(--text-600);
+        text-decoration: none;
+    }
+
+    > p a:hover {
+        color: var(--text-700);
+    }
+}

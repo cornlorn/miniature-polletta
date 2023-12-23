@@ -6,8 +6,16 @@
         <title></title>
         <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
         <link rel="stylesheet" href="style.css">
+        <script>
+            window.onload = function () {
+                document.querySelector(".loader").style.display = "none";
+            };
+        </script>
     </head>
     <body>
+        <div class="loader">
+            <div class="spinner"></div>
+        </div>
         <main>
             <div class="main-container">
                 <section>
@@ -59,7 +67,7 @@
                         <label for="s5" id="slide5">
                             <img src="IMG_0004.jpg">
                         </label>
-                        <div/>
+                        <div />
                 </section>
             </div>
         </main>

@@ -382,3 +382,34 @@ img {
     user-select: none;
     -webkit-user-select: none;
 }
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    place-content: center;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: var(--background-50);
+}
+
+.spinner {
+    border: 0.5rem solid var(--secondary-50);
+    border-top: 0.5rem solid var(--primary-500);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

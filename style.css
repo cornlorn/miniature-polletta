@@ -320,12 +320,13 @@ small {
     margin: auto;
     width: 60%;
     height: 100%;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     position: absolute;
     left: 0;
     right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
+    overflow: hidden;
 
     > img {
         width: 100%;
@@ -379,22 +380,7 @@ small {
     transform: translate3d(30%, 0, -200px);
 }
 
-#slide1 {
-    background: #00BCD4
-}
-
-#slide2 {
-    background: #4CAF50
-}
-
-#slide3 {
-    background: #CDDC39
-}
-
-#slide4 {
-    background: #FFC107
-}
-
-#slide5 {
-    background: #FF5722
+img {
+    user-select: none;
+    -webkit-user-select: none;
 }

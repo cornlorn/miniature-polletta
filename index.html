@@ -3,159 +3,61 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Erja & David's official website.">
-        <meta name="keywords" content="Erja, David, Polletta, Polletto, Davidino, Mario, Maria">
+        <meta name="description" content="Erja & David's official website">
         <title>Erja & David</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
         <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-        <link rel="stylesheet" href="style.css">
-        <script>
-            window.onload = function () {
-                document.querySelector(".loader").style.display = "none";
-
-                var imageNames = ["IMG_0001.png", "IMG_0002.jpg", "IMG_0003.jpg", "IMG_0004.jpg", "IMG_0005.jpg"];
-
-                function shuffleArray(array) {
-                    for (var i = array.length - 1; i > 0; i--) {
-                        var j = Math.floor(Math.random() * (i + 1));
-                        var temp = array[i];
-                        array[i] = array[j];
-                        array[j] = temp;
-                    }
-                }
-
-                shuffleArray(imageNames);
-
-                for (var i = 0; i < imageNames.length; i++) {
-                    document.querySelector('#slide' + (i + 1) + ' img').src = imageNames[i];
-                }
-            };
-        </script>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     </head>
     <body>
-        <div class="loader">
-            <div class="spinner"></div>
+        <div class="loading-screen">
+            <span class="spinner"></span>
         </div>
-        <main>
-            <div class="main-container">
-                <section>
-                    <div class="banner-content">
-                        <h1>ERJA & DAVID</h1>
-                        <p>Together since January 1st, 2024</p>
+        <div class="container">
+            <section id="home">
+                <div class="main-container">
+                    <h1>ERJA & DAVID</h1>
+                    <p>Together since January 1st, 2024</p>
+                </div>
+                <div class="phrase-container">
+                    <p id="phrase"></p>
+                </div>
+            </section>
+            <section id="about">
+                <div class="main-container">
+                    <h2>Our Journey</h2>
+                    <p>This whole journey kicked off back in May 2020, right smack in the middle of the pandemic chaos. We first crossed paths on a language app, and after a few months of chatting, we decided to dive into the long-distance relationship game on October 20th, 2020. Three years down the road, and we're still standing strong despite facing a truckload of problems.</p>
+                    <p>So, here we are on January 1st, 2024, feeling pretty darn prepared to take things up a notch. We've battled through our fair share of ups and downs, and we're not throwing in the towel. It's time to get real about this relationship, to make it official and serious, to confront our issues head-on, and to sketch out a future that's all about us for the long haul.</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="images/IMG_0001.png" alt="Photo of Erja">
+                        <h3>Erja</h3>
+                        <p>Ciao! I'm Polletta and I'm Italian. I love animals and sleeping tantissimo. I love Davidino, Mario and Maria. 🐶</p>
+                        <p id="tags">#animaletti #sleeppamento</p>
                     </div>
-                    <a href="#story">EXPLORE</a>
-                </section>
-                <section id="story">
-                    <div class="story-content">
-                        <h2>Our Journey</h2>
-                        <p>This whole journey kicked off back in May 2020, right smack in the middle of the pandemic chaos. We first crossed paths on a language app, and after a few months of chatting, we decided to dive into the long-distance relationship game on October 20th, 2020. Three years down the road, and we're still standing strong despite facing a truckload of problems.</p>
-                        <p>So, here we are on January 1st, 2024, feeling pretty darn prepared to take things up a notch. We've battled through our fair share of ups and downs, and we're not throwing in the towel. It's time to get real about this relationship, to make it official and serious, to confront our issues head-on, and to sketch out a future that's all about us for the long haul.</p>
+                    <div class="card">
+                        <img src="images/IMG_0002.jpg" alt="Photo of David">
+                        <h3>David</h3>
+                        <p>Hey, I'm Davidino from Honduras! I love coding and gaming. I like spending time with my loved ones.</p>
                     </div>
-                    <div class="card-container">
-                        <div class="card">
-                            <img src="IMG_0001.png" alt="Photo of Erja">
-                            <h3>Erja - Pollettina</h3>
-                            <p>Ciao! This is Erja from Italy. I love animals and sleeping. I love Davidino, Mario and Maria.</p>
-                            <p>#sleeppare #animaletti 🥱🐥</p>
-                        </div>
-                        <div class="card">
-                            <img src="IMG_0002.jpg" alt="Photo of David">
-                            <h3>David - Davidino</h3>
-                            <p>Hey, I'm David from Honduras! Passionate about programming, gaming, and music. I cherish moments shared with my loved ones above all else.</p>
-                        </div>
-                    </div>
-                </section>
-                <section id="carousel-photos">
-                    <div id="slider">
-                        <input type="radio" name="slider" id="s1">
-                        <input type="radio" name="slider" id="s2">
-                        <input type="radio" name="slider" id="s3" checked>
-                        <input type="radio" name="slider" id="s4">
-                        <input type="radio" name="slider" id="s5">
-                        <label for="s1" id="slide1">
-                            <img src="IMG_0005.jpg">
-                        </label>
-                        <label for="s2" id="slide2">
-                            <img src="IMG_0003.jpg">
-                        </label>
-                        <label for="s3" id="slide3">
-                            <img src="IMG_0001.png">
-                        </label>
-                        <label for="s4" id="slide4">
-                            <img src="IMG_0002.jpg">
-                        </label>
-                        <label for="s5" id="slide5">
-                            <img src="IMG_0004.jpg">
-                        </label>
-                        <div />
-                </section>
-                <section id="phrases">
-                    <span>POLLETTA</span>
-                    <span id="phrase"></span>
-                </section>
-            </div>
-        </main>
-        <footer>
-            <p>Created by <a href="http://github.com/cloxious/" target="_blank" rel="noopener noreferrer">Cloxious</a>.</p>
-        </footer>
-        <script>
-            var phrases = [
-                "Mi felicidad es tener tu nombre en mi corazón.",
-                "Pienso en ti desde que me despierto hasta que me duermo.",
-                "Te amo, mi amor.",
-                "Te amo, mi vida.",
-                "Te amo, mi ángel.",
-                "Te amo, mi princesa.",
-                "Te amo, mi reina.",
-                "Mi vida solo tiene sentido si estás a mi lado.",
-                "Me robaste el corazón y estaré eternamente agradecido por eso.",
-                "En tus ojos puedo ver un futuro maravilloso a tu lado.",
-                "Nada en este mundo me hace más feliz que estar a tu lado.",
-                "Siento que mi corazón está completo si te tengo.",
-                "Eres mi princesa, mi guerrera, mi compañera de aventuras.",
-                "Amo tu sonrisa. Amo tu mirada. Amo tu voz.",
-                "Amo cada parte de ti.",
-                "Eres la mujer más hermosa del mundo.",
-                "Amo tus estupideces.",
-                "A pesar de la distancia, sigo pensando en ti y esperando con ansias el momento en que nos veamos.",
-                "Eres la mujer de mis sueños.",
-                "Eres la mujer de mi vida.",
-                "Eres la mujer que quiero a mi lado por el resto de mi vida.",
-                "Eres mi persona favorita en todo el mundo.",
-                "Estar contigo es mi mayor alegría.",
-                "Eres mi hogar. A tu lado, me siento completo y seguro.",
-                "Eres la mujer de mi vida. Eres mi cielo en la tierra.",
-                "Incluso cuando no estamos juntos, mi corazón se llena de alegría solo de pensar en ti.",
-                "Fuimos hechos el uno para el otro.",
-                "Amore mio, ti amo. Voglio restare sempre con te.",
-                "Si lees esto, quiero que sepas que siento todo lo que he escrito en este sitio web, incluso si no te lo digo.",
-                "Contigo, el tiempo se detiene y el mundo desaparece.",
-                "Tú eres mi hogar, mi refugio, mi todo.",
-                "Quiero que sepas que mi amor por ti es real.",
-                "Espero que cambies y seas completamente mía.",
-                "Espero poder tenerte solamente para mí.",
-            ];
-
-            function randomAndTypePhrase() {
-                var randomIndex = Math.floor(Math.random() * phrases.length);
-                var phrase = phrases[randomIndex];
-                var i = 0;
-                var speed = 50;
-
-                document.querySelector("#phrase").innerHTML = "";
-
-                function type() {
-                    if (i < phrase.length) {
-                        document.querySelector("#phrase").innerHTML += phrase.charAt(i);
-                        i++;
-                        setTimeout(type, speed);
-                    }
-                }
-
-                type();
-            }
-
-            randomAndTypePhrase();
-        </script>
+                </div>
+            </section>
+            <section id="photos">
+                <div class="main-container">
+                    <h2>Photos</h2>
+                </div>
+                <div class="photo-container">
+                    <img src="images/IMG_0001.jpg" alt="Photo 1">
+                    <img src="images/IMG_0002.jpg" alt="Photo 2">
+                    <img src="images/IMG_0003.jpg" alt="Photo 3">
+                    <img src="images/IMG_0004.jpg" alt="Photo 4">
+                    <img src="images/IMG_0005.jpg" alt="Photo 5">
+                    <img src="images/IMG_0006.jpg" alt="Photo 6">
+                </div>
+            </section>
+        </div>
+        <script src="scripts/script.js"></script>
     </body>
 </html>

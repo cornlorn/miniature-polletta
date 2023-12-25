@@ -40,14 +40,14 @@ window.addEventListener("load", function () {
         }, 50);
     }
 
-    function randomizeChildrenOrder(parentSelector) {
-        const parent = document.querySelector(parentSelector);
-        const children = Array.from(parent.children);
+    const photoContainer = document.querySelector(".photo-container");
+    const photos = photoContainer.querySelectorAll("img");
 
-        children.sort(() => Math.random() - 0.5);
+    for (let i = 0; i < photos.length; i++) {
+        const randomIndex = Math.floor(Math.random() * photos.length);
+        const randomPhoto = photos[randomIndex];
+        const currentPhoto = photos[i];
 
-        children.forEach(child => {
-            parent.appendChild(child);
-        });
+        photoContainer.insertBefore(randomPhoto, currentPhoto);
     }
 });

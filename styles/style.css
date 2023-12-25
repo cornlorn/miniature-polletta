@@ -1,78 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
-
-:root {
-    --text: #000000;
-    --text-50: #f2f2f2;
-    --text-100: #e6e6e6;
-    --text-200: #cccccc;
-    --text-300: #b3b3b3;
-    --text-400: #999999;
-    --text-500: #808080;
-    --text-600: #666666;
-    --text-700: #4d4d4d;
-    --text-800: #333333;
-    --text-900: #1a1a1a;
-    --text-950: #0d0d0d;
-    --background: #f5f5f5;
-    --background-50: #f2f2f2;
-    --background-100: #e6e6e6;
-    --background-200: #cccccc;
-    --background-300: #b3b3b3;
-    --background-400: #999999;
-    --background-500: #808080;
-    --background-600: #666666;
-    --background-700: #4d4d4d;
-    --background-800: #333333;
-    --background-900: #1a1a1a;
-    --background-950: #0d0d0d;
-    --primary: #80007f;
-    --primary-50: #ffe5ff;
-    --primary-100: #ffccff;
-    --primary-200: #ff99ff;
-    --primary-300: #ff66ff;
-    --primary-400: #ff33ff;
-    --primary-500: #ff00ff;
-    --primary-600: #cc00cc;
-    --primary-700: #990099;
-    --primary-800: #660066;
-    --primary-900: #330033;
-    --primary-950: #1a0019;
-    --secondary: #cdc2a2;
-    --secondary-50: #f6f4ee;
-    --secondary-100: #ede9de;
-    --secondary-200: #dbd4bd;
-    --secondary-300: #c9be9c;
-    --secondary-400: #b8a87a;
-    --secondary-500: #a69359;
-    --secondary-600: #857547;
-    --secondary-700: #635836;
-    --secondary-800: #423b24;
-    --secondary-900: #211d12;
-    --secondary-950: #110f09;
-    --accent: #a9af98;
-    --accent-50: #f3f4f1;
-    --accent-100: #e7e9e2;
-    --accent-200: #cfd3c5;
-    --accent-300: #b7bca9;
-    --accent-400: #9fa68c;
-    --accent-500: #87906f;
-    --accent-600: #6c7359;
-    --accent-700: #515643;
-    --accent-800: #363a2c;
-    --accent-900: #1b1d16;
-    --accent-950: #0e0e0b;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html {
+    font-size: 100%;
     scroll-behavior: smooth;
 }
 
 body {
     line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
     text-align: justify;
-    color: var(--text);
-    background-color: var(--background);
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: rgb(245, 245, 245);
 }
 
 p:not(:last-child) {
@@ -86,36 +24,38 @@ p:not(:last-child) {
 
 #home {
     height: 100vh;
-    height: 100dvh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    gap: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 
     > .main-container {
         > h1 {
-            font-size: 2.25rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 900;
         }
 
         > p {
             font-size: 0.875rem;
-            font-style: italic;
+            font-family: 'Roboto Slab', serif;
         }
     }
 
     > .phrase-container {
         > p {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Roboto Slab', serif;
             font-size: 0.875rem;
             font-style: italic;
             color: var(--text-600);
 
             &::before {
-                content: '“';
+                content: "\201C";
             }
 
             &::after {
-                content: '”';
+                content: "\201D";
             }
         }
     }
@@ -125,19 +65,13 @@ p:not(:last-child) {
     margin-block-end: 5rem;
 
     > .main-container {
+        margin-block-end: 2rem;
+
         > h2 {
             font-size: 1.375rem;
             font-weight: 700;
             text-align: center;
             margin-block-end: 1rem;
-        }
-
-        > p {
-            font-size: 0.875rem;
-
-            &:last-of-type {
-                margin-block-end: 2rem;
-            }
         }
     }
 
@@ -162,10 +96,7 @@ p:not(:last-child) {
 
             > h3 {
                 font-weight: 700;
-            }
-
-            > p {
-                font-size: 0.875rem;
+                font-size: 1.125rem;
             }
 
             > #tags {
@@ -205,21 +136,19 @@ p:not(:last-child) {
 }
 
 #loading-screen {
-    width: 100%;
-    height: 100vh;
-    display: grid;
-    place-content: center;
-    place-items: center;
     position: fixed;
     inset: 0;
-    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
 }
 
 #loading-spinner {
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 6px solid var(--primary-500);
+    border: 6px solid #FEFEFE;
     border-top-color: transparent;
     animation: spin 1s linear infinite;
 }

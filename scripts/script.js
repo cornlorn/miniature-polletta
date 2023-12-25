@@ -1,9 +1,12 @@
+document.body.style.overflow = "hidden";
+
 window.addEventListener("load", function () {
     const loadingScreen = document.getElementById("loading-screen");
     const phrase = document.getElementById("phrase");
 
     if (loadingScreen) {
         loadingScreen.remove();
+        document.body.style.overflow = "auto";
     }
 
     if (phrase) {

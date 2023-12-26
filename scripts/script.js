@@ -11,21 +11,28 @@ window.addEventListener("load", function () {
 
     if (phrase) {
         const phrases = [
-            "Siempre serás mi babina.",
-            "Siempre serás mi stupidina.",
             "Amo cada parte de ti.",
             "Amo tus estupideces.",
             "Amo tus locuras.",
             "Cada día me enamoro más de ti.",
+            "Cuando nos veamos, te daré un abrazo.",
+            "Cuando nos veamos, te daré un beso.",
+            "Eres la chica más hermosa que he conocido.",
+            "Espero con ansias el día en que nos veamos.",
             "Me encanta tu mirada.",
             "Me encanta tu piedino.",
             "Me encanta tu sonrisa.",
+            "Pronto estaremos juntos.",
             "Recuerda de ir a pipiare.",
             "Recuerda que siempre estaré a tu lado.",
             "Recuerda que siempre puedes contar conmigo.",
+            "Siempre estaré a tu lado.",
+            "Siempre serás mi babina.",
+            "Siempre serás mi stupidina.",
             "Te amo, mi angelito.",
             "Te amo, mi princesa.",
             "Te amo, mi vida.",
+            "Un beso para ti."
         ];
         const randomIndex = Math.floor(Math.random() * phrases.length);
         const randomPhrase = phrases[randomIndex];

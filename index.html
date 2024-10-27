@@ -1,72 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Erja & David's official website">
-        <title>Erja & David</title>
-        <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
-        <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <title>Polletta & Polletto</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(to bottom, #fce4ec, #e1bee7);
+            }
+
+            .card {
+                background-color: rgba(255, 255, 255, 0.8);
+                backdrop-filter: blur(10px);
+                border-radius: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                padding: 2rem;
+                max-width: 90%;
+                width: 400px;
+                text-align: center;
+            }
+
+            h1 {
+                color: #6a1b9a;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+
+            h2 {
+                color: #9c27b0;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: #333;
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+
+            .button {
+                background-color: #9c27b0;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-size: 1rem;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            .button:hover {
+                background-color: #7b1fa2;
+            }
+
+            @media (max-width: 480px) {
+                .card {
+                    padding: 1.5rem;
+                }
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+            }
+        </style>
     </head>
     <body>
-        <div id="loading-screen">
-            <div id="loading-spinner"></div>
-        </div>
-        <div class="container">
-            <section id="home">
-                <div class="main-container">
-                    <h1>ERJA & DAVID</h1>
-                    <p>Together since January 1st, 2024</p>
-                </div>
-                <div class="phrase-container">
-                    <p id="phrase">Te amo, mi princesa.</p>
-                </div>
-            </section>
-            <section id="about">
-                <div class="main-container">
-                    <h2>Our Journey</h2>
-                    <p>This whole journey kicked off back in May 2020, right smack in the middle of the pandemic chaos. We first crossed paths on a language app, and after a few months of chatting, we decided to dive into the long-distance relationship game on October 20th, 2020. Three years down the road, and we're still standing strong despite facing a truckload of problems.</p>
-                    <p>So, here we are on January 1st, 2024, feeling pretty darn prepared to take things up a notch. We've battled through our fair share of ups and downs, and we're not throwing in the towel. It's time to get real about this relationship, to make it official and serious, to confront our issues head-on, and to sketch out a future that's all about us for the long haul.</p>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <img src="images/image-009.png" alt="Photo of Erja">
-                        <h3>Erja</h3>
-                        <p>Ciao! I'm Polletta and I'm Italian. I love animals and sleeping tantissimo. I love Davidino, Mario and Maria. 🥱🐶</p>
-                        <p id="tags">#animaletti #sleeppamento</p>
-                    </div>
-                    <div class="card">
-                        <img src="images/image-008.png" alt="Photo of David">
-                        <h3>David</h3>
-                        <p>Hey, I'm Davidino from Honduras! I love coding and gaming. I like spending time with my loved ones.</p>
-                    </div>
-                </div>
-            </section>
-            <section id="photos">
-                <div class="main-container">
-                    <h2>Photos</h2>
-                </div>
-                <div class="photo-container">
-                    <img src="images/image-001.png" alt="Photo 1">
-                    <img src="images/image-002.png" alt="Photo 2">
-                    <img src="images/image-003.png" alt="Photo 3">
-                    <img src="images/image-004.png" alt="Photo 4">
-                    <img src="images/image-005.png" alt="Photo 5">
-                    <img src="images/image-006.png" alt="Photo 6">
-                    <img src="images/image-007.png" alt="Photo 7">
-                    <img src="images/image-008.png" alt="Photo 8">
-                    <img src="images/image-009.png" alt="Photo 9">
-                    <img src="images/image-010.png" alt="Photo 10">
-                    <img src="images/image-011.png" alt="Photo 11">
-                </div>
-            </section>
-        </div>
-        <script src="scripts/script.js"></script>
-        <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-        <script>
-            new Snowflakes();
-        </script>
+        <main class="card">
+            <h1>Polletta & Polletto</h1>
+            <h2>Todo tiene un final, pero no ha terminado</h2>
+            <p>Merezco una segunda oportunidad</p>
+            <p>Sé que me comporté mal contigo, pero he aprendido la lección y me di cuenta de mi pérdida. Te extraño, extraño estar contigo mientras trabajabas, extraño dormir contigo cada noche, extraño jugar contigo UNO, Dardos, Conecta 4, etc.</p>
+            <p>Creo que merezco una segunda oportunidad para demostrar que puedo ser mejor para ti. Quiero que me des la oportunidad de reconquistar tu corazón.</p>
+            <p>Aún quiero tener a Mario y María. Cuando me mostraste el video de Miryam viend TV y tú cocinando, se mi hizo lindo y deseé tener eso contigo.</p>
+            <button class="button">Escríbeme &#10084;</button>
+        </main>
     </body>
 </html>
